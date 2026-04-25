@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme {
+  --color-tn-red: #ff0000;
+  --color-tn-red-glow: #ff00004d;
+  --color-tn-green: #00923f;
+  --color-tn-green-glow: #00923f4d;
+  --color-tn-gold: #FFD700;
+  --color-tn-gold-glow: #FFD7004d;
+  --color-tn-orange: #FF9933;
+  --color-tn-orange-glow: #FF99334d;
+  --color-tn-maroon: #8B0000;
+  --color-tn-maroon-glow: #8B00004d;
+}
+
+@layer base {
+  body {
+    @apply bg-slate-950 text-slate-100 antialiased selection:bg-red-500/30;
+  }
+}
+
+@layer components {
+  .dashboard-card {
+    @apply bg-slate-900/50 backdrop-blur-md border border-slate-800 rounded-2xl overflow-hidden shadow-xl transition-all duration-300 hover:border-slate-700 hover:shadow-2xl hover:shadow-red-500/5;
+  }
+  
+  .glow-red { @apply shadow-[0_0_15px_-3px_var(--color-tn-red-glow)]; }
+  .glow-green { @apply shadow-[0_0_15px_-3px_var(--color-tn-green-glow)]; }
+  .glow-gold { @apply shadow-[0_0_15px_-3px_var(--color-tn-gold-glow)]; }
+  .glow-orange { @apply shadow-[0_0_15px_-3px_var(--color-tn-orange-glow)]; }
+  .glow-maroon { @apply shadow-[0_0_15px_-3px_var(--color-tn-maroon-glow)]; }
+}
