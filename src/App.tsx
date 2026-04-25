@@ -5,7 +5,7 @@ import Demographics from './components/Demographics';
 import BattlegroundSeats from './components/BattlegroundSeats';
 import LiveFeed from './components/LiveFeed';
 import { compiledSurveys } from './data/compiledSurveys';
-import { Terminal, Users, Vote, Scale, Clock, ChevronDown, MousePointer2, Radio, X } from 'lucide-react';
+import { Users, Vote, Scale, Clock, ChevronDown, MousePointer2, Radio, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 function App() {
